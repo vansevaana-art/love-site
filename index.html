@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Для тебя ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone">
+
+    <div id="page1" class="page active">
+
+        <img src="images/bunny1.png" class="top-image">
+
+        <h1>Хочешь пойти со мной на домашнее свидание? 💌</h1>
+
+        <div class="buttons">
+
+            <button id="yesBtn">
+                <span>Да</span>
+            </button>
+
+            <button id="noBtn">
+                Нет
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="page2" class="page">
+
+        <img src="images/bunny2.png" class="top-image">
+
+    <h1>Подожди... Ты действительно сказала да? 😍</h1>
+
+    <p>Я думала ты скажешь «нет» 😁</p>
+
+    <button class="nextBtn">
+        Да, да, ДА
+    </button>
+
+    </div>
+
+    <div id="page3" class="page">
+
+        <img src="images/bunny3.png" class="top-image">
+
+    <h1>Когда ты свободен?</h1>
+
+    <div class="calendar-box">
+
+    <h2>Выбери день 💗</h2>
+
+    <div class="calendar-header">
+        <button id="prevMonth">‹</button>
+        <span id="monthYear"></span>
+        <button id="nextMonth">›</button>
+    </div>
+
+    <div class="weekdays">
+        <span>Пн</span>
+        <span>Вт</span>
+        <span>Ср</span>
+        <span>Чт</span>
+        <span>Пт</span>
+        <span>Сб</span>
+        <span>Вс</span>
+    </div>
+
+    <div id="calendar"></div>
+
+</div>
+
+<input id="dateInput" type="text" placeholder="Дата" readonly>
+
+<input id="timeInput" type="time">
+
+<button id="dateNext" class="nextBtn" disabled>
+    Готово💖
+</button>
+
+    </div>
+
+    <div id="page4" class="page">
+
+
+    <h1>Что ты хочешь?</h1>
+    <div id="counter">
+    Выбрано: 0/3 💗
+</div>
+
+<div id="wishList">
+</div>
+
+    <div class="cards">
+
+        <div class="card" data-choice="Синабоны">
+        <img src="images/photo4.png">
+        <span>Синабоны</span>
+    </div>
+
+    <div class="card" data-choice="Суши">
+        <img src="images/photo6.png">
+        <span>Суши</span>
+    </div>
+
+    <div class="card" data-choice="Почеши спинку">
+        <img src="images/photo5.png">
+        <span>Почеши спинку</span>
+    </div>
+
+    <div class="card" data-choice="Торт">
+        <img src="images/photo2.png">
+        <span>Торт</span>
+    </div>
+
+   <div class="card" data-choice="Винишко">
+        <img src="images/photo1.png">
+        <span>Винишко</span>
+    </div>
+
+   <div class="card" data-choice="Шашлычок">
+        <img src="images/photo3.png">
+        <span>Шашлычок</span>
+    </div>
+
+    </div>
+
+    <button id="wishNext" class="nextBtn" disabled>
+    Продолжить 💖
+</button>
+
+    </div>
+
+    <div id="page5" class="page">
+
+        <img src="images/bunny4.png" class="top-image">
+
+        <h1>Я очень рада ❤️</h1>
+
+        <p>
+            Спасибо, что согласился🥰 Буду ждать тебя в выбранное тобой вреия и дату🥰Люблю тебя мой зайчик
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
