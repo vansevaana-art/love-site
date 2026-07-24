@@ -4,7 +4,7 @@ const noBtn = document.getElementById("noBtn");
 let yesSize = 1;
 let noClicks = 0;
 
-noBtn.addEventListener("mouseover", moveButton);
+noBtn.addEventListener("touchstart", moveButton);
 
 noBtn.addEventListener("click", () => {
 
@@ -33,7 +33,6 @@ function moveButton(){
     noBtn.style.top = y + "px";
 
 }
-
 yesBtn.addEventListener("click", () => {
 
     document.getElementById("page1").classList.remove("active");
