@@ -1,5 +1,6 @@
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
+alert("JS работает");
 
 let yesSize = 1;
 let noClicks = 0;
