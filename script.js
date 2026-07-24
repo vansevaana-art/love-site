@@ -258,7 +258,23 @@ cards.forEach(card => {
 
 wishNext.onclick = () => {
 
+    const data = {
+        date: dateInput.value,
+        time: timeInput.value,
+        wishes: selectedWishes.join(", ")
+    };
+
+    fetch("https://formspree.io/f/xzdnjgdz&quot;, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    });
+
     page4.classList.remove("active");
     page5.classList.add("active");
+
+};
 
 };
