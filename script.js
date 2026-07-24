@@ -1,6 +1,6 @@
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
-alert("JS работает");
+
 
 let yesSize = 1;
 let noClicks = 0;
@@ -257,20 +257,6 @@ cards.forEach(card => {
 });
 
 wishNext.onclick = () => {
-
-    const data = {
-        date: dateInput.value,
-        time: timeInput.value,
-        wishes: selectedWishes.join(", ")
-    };
-
-    fetch("https://formspree.io/f/xzdnjgdz;, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    });
 
     page4.classList.remove("active");
     page5.classList.add("active");
