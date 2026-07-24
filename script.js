@@ -5,6 +5,8 @@ const noBtn = document.getElementById("noBtn");
 let yesSize = 1;
 let noClicks = 0;
 
+noBtn.addEventListener("mouseover", moveButton);
+
 noBtn.addEventListener("touchstart", moveButton);
 
 noBtn.addEventListener("click", () => {
