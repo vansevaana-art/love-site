@@ -1,6 +1,5 @@
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
-console.log("скрипт загрузился");
 
 let yesSize = 1;
 let noClicks = 0;
