@@ -1,5 +1,6 @@
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
+console.log("скрипт загрузился");
 
 let yesSize = 1;
 let noClicks = 0;
@@ -273,7 +274,5 @@ wishNext.onclick = () => {
 
     page4.classList.remove("active");
     page5.classList.add("active");
-
-};
 
 };
