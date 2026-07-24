@@ -163,7 +163,7 @@ p{
     }
 
     100%{
-        transform:scal
+        transform:scale(1);
     }
 
 }
