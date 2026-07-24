@@ -263,7 +263,7 @@ wishNext.onclick = () => {
         wishes: selectedWishes.join(", ")
     };
 
-    fetch("https://formspree.io/f/xzdnjgdz&quot;, {
+    fetch("https://formspree.io/f/xzdnjgdz;, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
