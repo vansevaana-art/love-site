@@ -5,10 +5,16 @@ const noBtn = document.getElementById("noBtn");
 let yesSize = 1;
 let noClicks = 0;
 
-noBtn.addEventListener("mouseover", moveButton);
+noBtn.addEventListener("mouseenter", moveButton);
 
-noBtn.addEventListener("touchstart", moveButton);
+noBtn.addEventListener("touchstart", (e) => {
 
+    e.preventDefault();
+
+    moveButton();
+
+});
+    
 noBtn.addEventListener("click", () => {
 
     noClicks++;
@@ -23,14 +29,12 @@ noBtn.addEventListener("click", () => {
     noBtn.style.transform =
     `scale(${1 - noClicks * 0.15})`;
 
-    moveButton();
-
 });
 
 function moveButton(){
 
-    const x = Math.random() * 180 + 130;
-    const y = Math.random() * 80 + 80;
+    const x = Math.random() * 220 + 80;
+    const y = Math.random() * 120 + 40;
 
     noBtn.style.left = x + "px";
     noBtn.style.top = y + "px";
